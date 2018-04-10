@@ -1,7 +1,4 @@
-angularjs版echarts 支持最新ECharts3.x
-
-## 更新说明
-> 支持ECharts3.x,如果想用ECharts2.x,请用V2.0.0版本
+angularjs版echarts 支持最新ECharts3.8.5
 
 > 3.x主题API发生了改变,去掉了内置的主题
 
@@ -9,11 +6,9 @@ angularjs版echarts 支持最新ECharts3.x
 > npm i ng-echarts --save-dev
 
 ## 组件构建
->* git clone https://github.com/liekkas/ng-echarts.git
+>* git clone https://github.com/AlanSune/ng-echarts.git
 >* npm i
 >* gulp
-
-## [在线DEMO](http://liekkas.github.io/ng-echarts/index3.html)
 
 ## 组件应用
 
@@ -23,10 +18,12 @@ ng-echarts只需要两个变量：
     * theme：图表主题名称, 
     * event：绑定事件
     * dataLoaded：数据是否加载（用于Loading）
-    
+    * noData: 无数据(dataLoaded为true有效)
+    * error: 数据获取错误(dataLoaded为true有效)
+    
 ### 注意事项
->* ECharts3.0没有内置地图,如果想用地图组件,需要先引入地图数据,[点这里](http://echarts.baidu.com/download-map.html)
->* ECharts3.0主题设置也发生了,变化,需要先引入主题数据,[点这里](http://echarts.baidu.com/download-theme.html)
+>* ECharts3.8.5没有内置地图,如果想用地图组件,需要先引入地图数据,[点这里](http://echarts.baidu.com/download-map.html)
+>* ECharts3.8.5主题设置也发生了,变化,需要先引入主题数据,[点这里](http://echarts.baidu.com/download-theme.html)
 
 一个简单示例：
 html中
