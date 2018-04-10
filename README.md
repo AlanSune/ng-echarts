@@ -15,11 +15,11 @@ angularjs版echarts 支持最新ECharts3.8.5
 ng-echarts只需要两个变量：
 > * ecOption：也就是echarts中的option，因此你直接可以把官网的例子拷进来用
 > * ecConfig：其他参数的配置项
-    * theme：图表主题名称, 
-    * event：绑定事件
-    * dataLoaded：数据是否加载（用于Loading）
-    * noData: 无数据(dataLoaded为true有效)
-    * error: 数据获取错误(dataLoaded为true有效)
+>    * theme：图表主题名称, 
+>    * event：绑定事件
+>    * dataLoaded：数据是否加载（用于Loading）
+>    * noData: 无数据(dataLoaded为true有效)
+>    * error: 数据获取错误(dataLoaded为true有效)
     
 ### 注意事项
 >* ECharts3.8.5没有内置地图,如果想用地图组件,需要先引入地图数据,[点这里](http://echarts.baidu.com/download-map.html)
