@@ -44,9 +44,7 @@ angular.module('ng-echarts',[])
                             //清除数据
                             if(scope.option.series)
                             {
-                                for(var i = 0; i < scope.option.series.length; i++) {
-                                    scope.option.series[i].data = [];
-                                }
+                                scope.option.series = [];
                             }
                             //增加提示
                             scope.option.graphic = {
@@ -55,7 +53,7 @@ angular.module('ng-echarts',[])
                                 top: 'center',
                                 z: 100,
                                 style: {
-                                    text: scope.config.noData ? "暂无数据" : "数据获取失败",
+                                    text: scope.config.error ? "数据获取失败" : "暂无数据",
                                     font: 'bold 1em Microsoft YaHei'
                                 }
                             }
@@ -92,7 +90,7 @@ angular.module('ng-echarts',[])
                             });
                         }
                     }
-                };
+                }
 
                 //自定义参数 - config
                 // event 定义事件

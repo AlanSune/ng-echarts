@@ -591,4 +591,76 @@ angular.module('NGEchartsTest',['ng-echarts'])
             });
         },$scope);
     })
+    .controller('Ctrl5',function($scope){
+        $scope.noDataConfig = _.cloneDeep($scope.baseConfig);
+        $scope.noDataConfig.noData = true;
+        $scope.$watch('theme', function (v) {
+            $scope.noDataConfig.theme = v;
+        });
+
+        $scope.noDataOption = {
+            title : {
+                text: '无数据测试'
+            },
+            legend: {
+                data:['legend-1','legend-2']
+            },
+            xAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name: 'legend-1',
+                    data: []
+                },
+                {
+                    name: 'legend-2',
+                    data: []
+                }
+            ]
+        };
+    })
+    .controller('Ctrl6',function($scope){
+        $scope.errorConfig = _.cloneDeep($scope.baseConfig);
+        $scope.errorConfig.error = true;
+        $scope.$watch('theme', function (v) {
+            $scope.errorConfig.theme = v;
+        });
+
+        $scope.errorOption = {
+            title : {
+                text: '错误测试'
+            },
+            legend: {
+                data:['legend-1','legend-2']
+            },
+            xAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name: 'legend-1',
+                    data: []
+                },
+                {
+                    name: 'legend-2',
+                    data: []
+                }
+            ]
+        };
+    });
 

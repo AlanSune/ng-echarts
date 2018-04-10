@@ -33,9 +33,18 @@
                 <ng-echarts class="col-md-6 echarts" ec-config="scatterConfig" ec-option="scatterOption" ></ng-echarts>
             </div>
         </div>
+
+        <div class="row">
+            <div ng-controller="Ctrl5">
+                <ng-echarts ec-ex class="col-md-6 echarts" ec-config="noDataConfig" ec-option="noDataOption" ></ng-echarts>
+            </div>
+            <div ng-controller="Ctrl6">
+                <ng-echarts class="col-md-6 echarts" ec-config="errorConfig" ec-option="errorOption" ></ng-echarts>
+            </div>
+        </div>
     </div>
 
-    <script src="//cdn.bootcss.com/echarts/3.0.0/echarts.min.js"></script>
+    <script src="//cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
     <script src="http://cdn.bootcss.com/angular.js/1.3.17/angular.min.js"></script>
     <script src="http://cdn.bootcss.com/lodash.js/3.10.1/lodash.js"></script>
     <script src="vintage.js"></script>
