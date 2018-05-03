@@ -600,7 +600,7 @@ angular.module('NGEchartsTest',['ng-echarts'])
 
         $scope.noDataOption = {
             title : {
-                text: '无数据测试'
+                text: '无数据'
             },
             legend: {
                 data:['legend-1','legend-2']
@@ -618,25 +618,28 @@ angular.module('NGEchartsTest',['ng-echarts'])
             series : [
                 {
                     name: 'legend-1',
-                    data: []
+                    type:'line',
+                    data: [1,2,3]
                 },
                 {
                     name: 'legend-2',
-                    data: []
+                    type:'line',
+                    data: [1,2,3]
                 }
             ]
         };
     })
     .controller('Ctrl6',function($scope){
         $scope.errorConfig = _.cloneDeep($scope.baseConfig);
-        $scope.errorConfig.error = true;
+        $scope.errorConfig.noData = true;
+        $scope.errorConfig.noDataText = "没有数据";
         $scope.$watch('theme', function (v) {
             $scope.errorConfig.theme = v;
         });
 
         $scope.errorOption = {
             title : {
-                text: '错误测试'
+                text: '无数据修改文本'
             },
             legend: {
                 data:['legend-1','legend-2']
@@ -654,11 +657,13 @@ angular.module('NGEchartsTest',['ng-echarts'])
             series : [
                 {
                     name: 'legend-1',
-                    data: []
+                    type:'line',
+                    data: [1,2,3]
                 },
                 {
                     name: 'legend-2',
-                    data: []
+                    type:'line',
+                    data: [1,2,3]
                 }
             ]
         };
