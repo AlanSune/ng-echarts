@@ -1,4 +1,8 @@
-# 该项目在原项目的基础下增加resize事件的重绘功能
+# 该项目在原项目的基础下增加resize事件的重绘功能以及无数据时的配置
+
+>* ecConfig：其他参数的配置项  
+>  - noData: 无数据（dataLoaded为true有效）  
+>  - noDataText: 无数据提示文本（dataLoaded为true有效，默认为"无数据"）  
 
 ## 以下为原项目的介绍
 ***
@@ -18,10 +22,6 @@ ng-echarts只需要两个变量：
 >* ecOption：也就是echarts中的option，因此你直接可以把官网的例子拷进来用
 >* ecConfig：其他参数的配置项  
 >  - theme：图表主题名称   
->  - event：绑定事件  
->  - dataLoaded：数据是否加载（用于Loading）  
->  - noData: 无数据（dataLoaded为true有效）  
->  - noDataText: 无数据提示文本（dataLoaded为true有效，默认为"无数据"）  
     
 ### 注意事项
 >* ECharts3.8.5没有内置地图,如果想用地图组件,需要先引入地图数据,[点这里](http://echarts.baidu.com/download-map.html)
